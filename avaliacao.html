@@ -1,0 +1,102 @@
+avaliacao.html
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>P.Web Avaliação</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css" />
+	<!-- ícone em cima da pagina
+	<link rel="icon"  href="imagens/icone.png"> -->
+	<link rel="icon" type="image/png" sizes="32x32" href="imagens/robot.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script type="text/javascript" src="js/index.js"> </script>
+
+</head>
+<body>
+	<div id="Aguiar">
+
+		<button id="btn1">btn1</button>
+		<button id="btn2">btn2</button>
+		<button id="btn3">btn3</button>
+		<button id="btn4">btn4</button>
+		<button id="btn5">btn5</button>
+		<button id="btn6">btn6</button>
+		 
+		 <table style="width:100%">
+  
+</table> 
+	</div>
+	<div>
+		<h1 id="Elis">Choveu durante quatro anos, onze meses e dois dias.</h1>
+		<div id="Barbosa">
+
+		<p id="Sandra">Muitos anos depois, diante do pelotão de fuzilamento, o Coronel Aureliano Buendía havia de recordar aquela tarde remota em que seu pai o levou para conhecer o gelo. Macondo era então uma aldeia de vinte casas de barro e taquara, cons­truídas à margem de um rio de águas diá­fanas que se precipitavam por um lei­to de pedras polidas, brancas e enor­mes como ovos pré-históricos. O mundo era tão recente que muitas coisas careciam de nome e para mencioná-las se precisava apontar com o dedo.</p>
+
+		<p id="Sandra">O Diário de Anne Frank (Anne Frank)</p>
+
+		<p>É difícil em tempos como estes: ideais, sonhos e esperanças permanecerem dentro de nós, sendo esmagados pela dura realidade. É um milagre eu não ter abandonado todos os meus ideais, eles parecem tão absurdos e impraticáveis. No entanto, eu me apego a eles, porque eu ainda acredito, apesar de tudo, que as pessoas são realmente boas de coração.</p>
+	
+			
+		</div>
+		
+	
+
+
+
+	</div>
+	<script type="text/javascript">
+
+		$("#Elis").on("click",function(){
+			$("#Sandra").toggle(2000);	
+
+
+		});
+		$("#btn1").on("click",function(){
+			alert($("#Sandra").text());	
+		});
+
+		$("#btn2").on("click", function(){
+			$("#Barbosa").prepend("<h3>Continue Lendo!</h3>")
+
+		});
+
+			$("#btn3").on("click", function(){
+			$("#Elis").append("<p>O cara da Marinha e eu dissemos que tinha sido um prazer conhecer um ao outro. Esse é um troço que me deixa maluco. Estou sempre dizendo: ‘Muito prazer em conhecê-lo’ para alguém que não tenho nenhum prazer em conhecer. Mas a gente tem que fazer essas coisas para seguir vivendo.</p>")
+
+		});
+			$("#btn4").on("click", function(){
+				$("#Barbosa").css("background-color","#848484");
+
+			});	
+
+			$("#btn5").on("click", function(){
+				$("#Elis").css("border","dotted");
+
+			});
+
+			var ifc = [
+				{"prof" : "Rafael", "disc" : "programacao web"},
+				{"prof" : "Rafael", "disc" : "Web design"},
+			   {"prof" : "Rafael", "disc" : "Projeto Integrador"},
+			    {"prof" : "Rodrigo", "disc" : "banco de dados"},
+				{"prof" : "	valverde", "disc" : "Eng.Requisitos"},
+			]
+
+			$("#btn6").on("click", function(){
+
+				for(var i = 0; i < ifc.length; i++){
+					
+					$("table").append(`<tr>
+						<td>${ifc[i].prof}</td>
+						<td>${ifc[i].disc}</td>
+						</tr>`)
+				}
+
+			});
+	
+					
+	</script>
+	</body>
+		</html>
